@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construye Aplicaciones Web</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header id="inicio">
+    <header id="inicio">
+        <div class="header-contenido">
+            <h1>Construye Aplicaciones Web</h1>
+            <p> HTML5, CSS3, JavaScript, DOM, Funciones, Bootstrap y Pencil</p>
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#semantica">HTML5 Semántico</a></li>
+                <li><a href="#listas-tablas">Listas y Tablas</a></li>
+                <li><a href="#css-avanzado">CSS Avanzado</a></li>
+                <li><a href="#js-fundamentos">JS y Operadores</a></li>
+                <li><a href="#js-dom">DOM y Métodos</a></li>
+                <li><a href="#js-funciones">Funciones JS</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="semantica" class="tarjeta-seccion">
+            <h2>1. Estructura Semántica de HTML5 y Estilos CSS</h2>
+            <p>Las etiquetas semánticas definen la estructura clara del documento web y mejoran la accesibilidad y el SEO.</p>
+
+            <div class="grid-dos-columnas">
+                <article class="caja-info">
+                    <h3>Etiquetas Principales</h3>
+                    <dl class="lista-glosario">
+                        <dt><code>&lt;header&gt;</code></dt>
+                        <dd>Define el encabezado de un documento o sección (logo, títulos y buscador)[span_3](start_span)[span_3](end_span).</dd>
+
+                        <dt><code>&lt;nav&gt;</code></dt>
+                        <dd>Agrupa los enlaces de navegación principal[span_4](start_span)[span_4](end_span).</dd>
+
+                        <dt><code>&lt;main&gt;</code></dt>
+                        <dd>Define el contenido principal único del documento (solo uno por página)[span_5](start_span)[span_5](end_span).</dd>
+
+                        <dt><code>&lt;section&gt;</code> / <code>&lt;article&gt;</code> / <code>&lt;aside&gt;</code></dt>
+                        <dd>Agrupan contenido temático, independiente o lateral[span_6](start_span)[span_6](end_span).</dd>
+
+                        <dt><code>&lt;footer&gt;</code></dt>
+                        <dd>Pie de página con autor, copyright y enlaces de contacto[span_7](start_span)[span_7](end_span).</dd>
+                    </dl>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Decoración y Visibilidad con CSS</h3>
+                    <ul>
+                        <li><strong>Decoración de secciones:</strong> Uso de <code>border-style</code>, <code>box-shadow</code>, <code>border-radius</code> y fondos[span_8](start_span)[span_8](end_span).</li>
+                        <li><strong>Visibilidad y Accesibilidad:</strong> Alto contraste, claridad visual y estados <code>:focus</code> con <code>outline</code> para mantener accesibilidad[span_9](start_span)[span_9](end_span)[span_10](start_span)[span_10](end_span).</li>
+                    </ul>
+                    <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=600&q=80" 
+                         alt="Pantalla de computadora mostrando código HTML y CSS" 
+                         class="img-responsiva">
+                </article>
+            </div>
+        </section>
+        <section id="listas-tablas" class="tarjeta-seccion">
+            <h2>2. Listas y Tablas en HTML5</h2>
+
+            <div class="grid-dos-columnas">
+                <div class="caja-info">
+                    <h3>Tipos de Listas</h3>
+                    <ul>
+                        <li><strong>Listas no ordenadas (<code>&lt;ul&gt;</code>):</strong> Elementos sin orden específico. Viñetas: <code>disc</code>, <code>circle</code>, <code>square</code>[span_11](start_span)[span_11](end_span).</li>
+                        <li><strong>Listas ordenadas (<code>&lt;ol&gt;</code>):</strong> Pasos secuenciales usando números o letras (<code>decimal</code>, <code>lower-alpha</code>, <code>upper-roman</code>)[span_12](start_span)[span_12](end_span).</li>
+                        <li><strong>Posición de viñeta (<code>list-style-position</code>):</strong> <code>inside</code> o <code>outside</code> del contenido[span_13](start_span)[span_13](end_span).</li>
+                        <li><strong>Lista de definición (<code>&lt;dl&gt;</code>):</strong> Para glosarios con término <code>&lt;dt&gt;</code> y descripción <code>&lt;dd&gt;</code>[span_14](start_span)[span_14](end_span).</li>
+                    </ul>
+                </div>
+
+                <div class="caja-info">
+                    <h3>Estructura y Atributos de Tablas</h3>
+                    <p>El contenedor <code>&lt;table&gt;</code> organiza datos en filas (<code>&lt;tr&gt;</code>), encabezados (<code>&lt;th&gt;</code>) y celdas (<code>&lt;td&gt;</code>)[span_15](start_span)[span_15](end_span).</p>
+                    <div class="tabla-contenedor">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="3">Ejemplo Práctico: Horario de Clases (colspan y rowspan)[span_16](start_span)[span_16](end_span)</th>
+                                </tr>
+                                <tr>
+                                    <th>Día / Hora</th>
+                                    <th>Bloque 1</th>
+                                    <th>Bloque 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2"><strong>Lunes</strong></td>
+                                    <td>Matemáticas</td>
+                                    <td>Historia</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Laboratorio de Desarrollo Web (2 horas)[span_17](start_span)[span_17](end_span)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="css-avanzado" class="tarjeta-seccion">
+            <h2>3. Media Queries, Flexbox y Grid</h2>
+
+            <div class="grid-tres-columnas">
+                <article class="caja-info">
+                    <h3>Media Queries (<code>@media</code>)</h3>
+                    <p>Permiten aplicar estilos según las características del dispositivo o pantalla para adaptar páginas a computadoras, tabletas y celulares[span_18](start_span)[span_18](end_span)[span_19](start_span)[span_19](end_span).</p>
+                    <pre class="bloque-codigo"><code>@media (max-width: 600px) {
+  body { background-color: lightblue; }
+}</code></pre>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Flexbox (<code>display: flex</code>)</h3>
+                    <p>Modelo de diseño unidimensional para organizar, alinear y distribuir elementos de manera flexible dentro de un contenedor en filas o columnas[span_20](start_span)[span_20](end_span).</p>
+                </article>
+
+                <article class="caja-info">
+                    <h3>CSS Grid (<code>display: grid</code>)</h3>
+                    <p>Sistema bidimensional de cuadrícula para filas y columnas[span_21](start_span)[span_21](end_span).</p>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 0.75rem; background: #e2e8f0; padding: 6px; border-radius: 6px;">
+                        <div style="background:var(--color-primario); color:#fff; padding:6px; text-align:center; font-size:0.8rem; border-radius:4px;">1</div>
+                        <div style="background:var(--color-primario); color:#fff; padding:6px; text-align:center; font-size:0.8rem; border-radius:4px;">2</div>
+                        <div style="background:var(--color-primario); color:#fff; padding:6px; text-align:center; font-size:0.8rem; border-radius:4px;">3</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="js-fundamentos" class="tarjeta-seccion">
+            <h2>4. JavaScript: Operadores y Estructuras de Control</h2>
+            <p>Dota de interactividad y dinamismo a las páginas web (Frontend y Backend con Node.js)[span_22](start_span)[span_22](end_span).</p>
+
+            <div class="grid-tres-columnas">
+                <article class="caja-info">
+                    <h3>Tipos de Datos y Conversión</h3>
+                    <ul>
+                        <li><strong>Number, String, Boolean, Undefined, Null, Symbol</strong>[span_23](start_span)[span_23](end_span).</li>
+                        <li><strong><code>parseInt()</code>:</strong> Convierte texto en número entero[span_24](start_span)[span_24](end_span).</li>
+                        <li><strong><code>parseFloat()</code>:</strong> Convierte texto en número decimal[span_25](start_span)[span_25](end_span).</li>
+                    </ul>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Operadores</h3>
+                    <ul>
+                        <li><strong>Aritméticos:</strong> <code>+</code>, <code>-</code>, <code></code>, <code>/</code>, <code>%</code>, <code>*</code>, <code>++</code>, <code>--</code>[span_26](start_span)[span_26](end_span).</li>
+                        <li><strong>Asignación y Comparación:</strong> <code>=</code>, <code>==</code>, <code>===</code>, <code>!=</code>, <code>&gt;</code>, <code>&lt;</code>[span_27](start_span)[span_27](end_span).</li>
+                        <li><strong>Especiales y Ternario:</strong> Operador ternario <code>condición ? true : false</code>[span_28](start_span)[span_28](end_span).</li>
+                    </ul>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Estructuras de Control</h3>
+                    <ul>
+                        <li><strong>Condicionales:</strong> <code>if</code>, <code>if...else</code>, <code>switch</code>[span_29](start_span)[span_29](end_span)[span_30](start_span)[span_30](end_span).</li>
+                        <li><strong>Ciclos:</strong> <code>for</code>, <code>while</code>, <code>do...while</code> (se ejecuta al menos una vez)[span_31](start_span)[span_31](end_span)[span_32](start_span)[span_32](end_span)[span_33](start_span)[span_33](end_span).</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="js-dom" class="tarjeta-seccion">
+            <h2>5. El DOM (Document Object Model) y Métodos de Selección</h2>
+            <p>Estructura que representa el documento HTML como un árbol de objetos, permitiendo a JavaScript modificar elementos sin recargar la página[span_34](start_span)[span_34](end_span)[span_35](start_span)[span_35](end_span).</p>
+
+            <div class="grid-tres-columnas">
+                <article class="caja-info">
+                    <h3><code>getElementById()</code></h3>
+                    <p>Busca y selecciona un elemento HTML por su atributo <code>id</code>[span_36](start_span)[span_36](end_span)[span_37](start_span)[span_37](end_span).</p>
+                    <pre class="bloque-codigo"><code>document.getElementById("id").innerHTML = "Texto";</code></pre>
+                </article>
+
+                <article class="caja-info">
+                    <h3><code>querySelector()</code></h3>
+                    <p>Selecciona el primer elemento que coincida con un selector CSS (clase, ID o etiqueta)[span_38](start_span)[span_38](end_span).</p>
+                    <pre class="bloque-codigo"><code>document.querySelector(".clase").style.color = "red";</code></pre>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Otros Métodos del DOM</h3>
+                    <ul>
+                        <li><strong><code>getElementsByClassName()</code>:</strong> Selecciona por clase[span_39](start_span)[span_39](end_span)[span_40](start_span)[span_40](end_span).</li>
+                        <li><strong><code>getElementsByTagName()</code>:</strong> Selecciona por etiqueta (ej. <code>&lt;p&gt;</code>)[span_41](start_span)[span_41](end_span).</li>
+                        <li><strong><code>getElementsByName()</code>:</strong> Selecciona por atributo <code>name</code>[span_42](start_span)[span_42](end_span).</li>
+                        <li><strong><code>innerHTML</code> / <code>textContent</code>:</strong> Modifican contenido HTML o texto plano[span_43](start_span)[span_43](end_span).</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="js-funciones" class="tarjeta-seccion">
+            <h2>6. Funciones en JavaScript</h2>
+            <p>Bloques de código que realizan una tarea específica y pueden ser reutilizados varias veces para evitar repetir código[span_44](start_span)[span_44](end_span).</p>
+
+            <div class="grid-dos-columnas">
+                <article class="caja-info">
+                    <h3>Sintaxis y Ventajas</h3>
+                    <ul>
+                        <li>Evita repetir código, organiza el programa, lo hace más legible y divide tareas[span_45](start_span)[span_45](end_span).</li>
+                    </ul>
+                    <pre class="bloque-codigo"><code>function nombreFuncion() {
+  // código a ejecutar[span_46](start_span)[span_46](end_span)
+}</code></pre>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Tipos de Funciones</h3>
+                    <ul>
+                        <li><strong>Con Parámetros y <code>return</code>:</strong> Reciben datos y devuelven un valor calculado[span_47](start_span)[span_47](end_span).</li>
+                    </ul>
+                    <pre class="bloque-codigo"><code>function sumar(a, b) {
+  return a + b;[span_48](start_span)[span_48](end_span)
+          }</code></pre>
+                </article>
+            </div>
+        </section>
+        <section id="herramientas" class="tarjeta-seccion">
+            <h2>7. Herramientas: Bootstrap y Pencil Project</h2>
+            <div class="grid-dos-columnas">
+                <article class="caja-info">
+                    <h3>Bootstrap (Framework)</h3>
+                    <p>Framework de código abierto para diseñar páginas web responsivas rápidamente con sistemas de cuadrícula y componentes prediseñados[span_49](start_span)[span_49](end_span).</p>
+                </article>
+
+                <article class="caja-info">
+                    <h3>Pencil Project (Prototipado)</h3>
+                    <p>Herramienta visual de software libre para crear diagramas, diseños y prototipos de interfaces antes de escribir código[span_50](start_span)[span_50](end_span).</p>
+                </article>
+            </div>
+        </section>
+        <section id="multimedia" class="tarjeta-seccion">
+            <h2>8. Recursos Multimedia: Audio y Video</h2>
+            <p>Integración nativa de elementos multimedia con controles de reproducción completos.</p>
+
+            <div class="grid-dos-columnas">
+                <div class="caja-info">
+                    <h3>Video JavaScript</h3>
+                    <video controls>
+                        <source src="tiktok.mp4" type="video/mp4">
+                        Tu navegador no soporta la etiqueta de video.
+                    </video>
+                </div>
+
+                <div class="caja-info">
+                    <h3>Audio de Apoyo / Podcast</h3>
+                    <p>Reproductor de audio integrado de forma nativa en la página web:</p>
+                    <audio controls class="reproductor-audio">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                        Tu navegador no soporta la etiqueta de audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="tarjeta-seccion">
+            <h2>9. Formulario de Evaluación y Alertas</h2>
+            <p>Completa este formulario interactivo para comprobar el funcionamiento de las validaciones y alertas visuales.</p>
+
+            <form id="formulario-contacto" class="formulario-estilizado">
+                <div class="campo-grupo">
+                    <label for="nombre">Nombre del estudiante:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Pérez" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="tema">Tema favorito de la guía:</label>
+                    <select id="tema" name="tema">
+                        <option value="Funciones y DOM">Funciones y Métodos del DOM</option>
+                        <option value="Bootstrap y Pencil">Bootstrap y Pencil Project</option>
+                        <option value="Multimedia">Multimedia (Audio y Video)</option>
+                        <option value="CSS Avanzado">CSS Avanzado (Flexbox/Grid/Media Queries)</option>
+                    </select>
+                </div>
+
+                <div class="campo-grupo">
+                    <label for="comentarios">Comentarios o dudas:</label>
+                    <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribe aquí tus comentarios..."></textarea>
+                </div>
+
+                <div class="botones-form">
+                    <button type="submit" class="btn-primario">Enviar Información</button>
+                    <!-- Botón reset -->
+                    <button type="reset" class="btn-reset">Limpiar Campos</button>
+                </div>
+            </form>
+
+            <div id="alerta-visual" class="alerta-oculta" role="alert"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Construye Aplicaciones Web Maria Victoria Cortez Gomez.</p>
+        <p><a href="#inicio">Volver arriba ↑</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const formulario = document.getElementById('formulario-contacto');
+            const alertaVisual = document.getElementById('alerta-visual');
+
+            function mostrarAlerta(mensaje) {
+                alertaVisual.textContent = mensaje;
+                alertaVisual.className = 'alerta-visible';
+                alertaVisual.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+
+            if (formulario) {
+                formulario.addEventListener('submit', (evento) => {
+                    evento.preventDefault();
+                    const nombre = document.getElementById('nombre').value.trim();
+                    const tema = document.getElementById('tema').value;
+
+                    mostrarAlerta(`Excelente trabajo, ${nombre}. Tus datos sobre ${tema} se han registrado correctamente usando JavaScript y el DOM.`);
+                    formulario.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
